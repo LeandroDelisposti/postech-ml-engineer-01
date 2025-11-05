@@ -1,0 +1,141 @@
+# ----------------------------------------
+# Python cache and bytecode
+# ----------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ----------------------------------------
+# Virtual environments
+# ----------------------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ----------------------------------------
+# Distribution / packaging
+# ----------------------------------------
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ----------------------------------------
+# PyInstaller
+# Usually these files are generated during builds
+# ----------------------------------------
+*.manifest
+*.spec
+
+# ----------------------------------------
+# Installer logs
+# ----------------------------------------
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ----------------------------------------
+# Unit test / coverage reports
+# ----------------------------------------
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.hypothesis/
+.pytest_cache/
+
+# ----------------------------------------
+# Jupyter Notebook checkpoints
+# ----------------------------------------
+.ipynb_checkpoints
+
+# ----------------------------------------
+# pyenv
+# ----------------------------------------
+.python-version
+
+# ----------------------------------------
+# Pycharm / VS Code / IDE settings
+# ----------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ----------------------------------------
+# mypy / static typing
+# ----------------------------------------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ----------------------------------------
+# Pyre type checker
+# ----------------------------------------
+.pyre/
+
+# ----------------------------------------
+# Logs and temporary files
+# ----------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# ----------------------------------------
+# Local environment / secrets
+# ----------------------------------------
+.env.local
+.env.dev
+.env.prod
+.env.test
+*.env
+
+# ----------------------------------------
+# Flask / Django specific
+# ----------------------------------------
+instance/
+db.sqlite3
+*.db
+*.sqlite3
+media/
+uploads/
+
+# ----------------------------------------
+# Jupyter / data science files
+# ----------------------------------------
+.ipynb_checkpoints
+*.ipynb_checkpoints
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.h5
+*.pkl
+*.joblib

@@ -1,0 +1,6 @@
+flask
+pandas
+requests
+flask-httpauth
+flasgger
+beautifulsoup4
