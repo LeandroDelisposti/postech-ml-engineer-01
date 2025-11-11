@@ -1,0 +1,9 @@
+flask
+pandas
+requests
+flask-httpauth
+flasgger
+beautifulsoup4
+flask-sqlalchemy
+Flask-JWT_Extended
+bcrypt
