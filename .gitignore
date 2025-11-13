@@ -137,5 +137,4 @@ uploads/
 *.xls
 *.xlsx
 *.h5
-*.pkl
 *.joblib
