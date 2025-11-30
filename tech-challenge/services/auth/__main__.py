@@ -9,5 +9,3 @@ app = FastAPI(
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the Auth API"}
-
-# TODO: Add the auth endpoints here

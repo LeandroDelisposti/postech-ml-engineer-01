@@ -22,32 +22,30 @@ See `docs/architecture.md` for the full architectural plan.
    git clone <repository-url>
    ```
 2. **Install dependencies for each service:**
-   - **Core Service:**
-     ```bash
-     pip install -r services/core/requirements.txt
-     ```
+   ```bash
+   uv pip install -r services/core/requirements.txt
+   ```
    - **Insights Service:**
      ```bash
-     pip install -r services/insights/requirements.txt
+     uv pip install -r services/insights/requirements.txt
      ```
    - **Auth Service:**
      ```bash
-     pip install -r services/auth/requirements.txt
+     uv pip install -r services/auth/requirements.txt
      ```
    - **ML Service:**
      ```bash
-     pip install -r services/ml/requirements.txt
-     ```
+     uv pip install -r services/ml/requirements.txt
+       ```
 
 ## API Documentation (Swagger)
 
 Each service has its own API documentation available at `/docs` when running.
 
-- **Core Service:** `http://127.0.0.1:8001/docs`
-- **Insights Service:** `http://127.0.0.1:8002/docs`
-- **Auth Service:** `http://127.0.0.1:8003/docs`
-- **ML Service:** `http://127.0.0.1:8004/docs`
-
+- **Core Service:** `http://127.0.0.1:8000/docs`
+- **Insights Service:** `http://127.0.0.1:8001/docs`
+- **Auth Service:** `http://127.0.0.1:8002/docs`
+- **ML Service:** `http://127.0.0.1:8003/docs`
 ## How to Run
 
 - **Run the scraper:**
@@ -57,21 +55,25 @@ Each service has its own API documentation available at `/docs` when running.
 - **Run each service (in separate terminals):**
   - **Core Service:**
     ```bash
-    uvicorn services.core.main:app --reload --port 8001
+    cd services/core
+    uv run uvicorn __main__.py --reload --port 8000
     ```
   - **Insights Service:**
     ```bash
-    uvicorn services.insights.main:app --reload --port 8002
+    cd services/insights
+    uv run uvicorn __main__.py --reload --port 8001
     ```
   - **Auth Service:**
     ```bash
-    uvicorn services.auth.main:app --reload --port 8003
+    cd services/auth
+    uv run uvicorn __main__.py --reload --port 8002
     ```
   - **ML Service:**
     ```bash
-    uvicorn services.ml.main:app --reload --port 8004
+    cd services/ml
+    uv run uvicorn __main__.py --reload --port 8003
     ```
 - **Run tests:**
   ```bash
-  pytest
+  uv run pytest
   ```

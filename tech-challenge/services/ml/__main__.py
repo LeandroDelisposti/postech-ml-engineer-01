@@ -9,5 +9,3 @@ app = FastAPI(
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the ML API"}
-
-# TODO: Add the ML endpoints here
