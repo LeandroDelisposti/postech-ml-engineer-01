@@ -146,16 +146,82 @@
           ]
         }
       }
+    },
+    {
+      "name": "categories",
+      "id": "40646360-dc28-4ae5-9746-c2869e60aa5a",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"Leandro\",\r\n    \"password\": \"abd123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/api/v1/categories",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "categories"
+          ]
+        }
+      }
+    },
+    {
+      "name": "health",
+      "id": "26ac8d42-ba94-4f39-9404-350d3a2e577f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/api/v1/health",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "health"
+          ]
+        }
+      }
     }
   ],
   "variable": [
     {
-      "id": "ec5c7de6-5f69-4303-98d6-1cae0be9a3c7",
+      "id": "ac58c78b-374e-47bf-8f96-c7b9edf9ebbe",
       "key": "baseURL",
       "value": ""
     },
     {
-      "id": "cbed4354-a42d-4fb0-92c2-d50fb7f0c884",
+      "id": "65aeef6a-af0b-4d4e-b19b-c54debf7cdb4",
       "key": "bearer_token",
       "value": ""
     }
