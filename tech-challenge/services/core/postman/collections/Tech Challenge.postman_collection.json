@@ -1,9 +1,8 @@
 {
   "info": {
     "_postman_id": "76e8e822-31a0-4374-818f-236a71fbdc33",
-    "name": "Tech Challenge",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "290184"
+    "name": "Tech Challenge - Core",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
@@ -14,7 +13,6 @@
           "type": "noauth"
         },
         "method": "POST",
-        "header": [],
         "body": {
           "mode": "raw",
           "raw": "{\r\n    \"username\": \"Leandro\",\r\n    \"password\": \"abd123\"\r\n}",
@@ -35,8 +33,7 @@
             "scrape"
           ]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "books",
@@ -49,7 +46,6 @@
           "type": "noauth"
         },
         "method": "GET",
-        "header": [],
         "body": {
           "mode": "raw",
           "raw": "{\r\n    \"username\": \"Leandro\",\r\n    \"password\": \"abd123\"\r\n}",
@@ -70,8 +66,7 @@
             "books"
           ]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "books\\{id}",
@@ -84,7 +79,6 @@
           "type": "noauth"
         },
         "method": "GET",
-        "header": [],
         "body": {
           "mode": "raw",
           "raw": "{\r\n    \"username\": \"Leandro\",\r\n    \"password\": \"abd123\"\r\n}",
@@ -106,8 +100,7 @@
             "1"
           ]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "books\\search",
@@ -120,7 +113,6 @@
           "type": "noauth"
         },
         "method": "GET",
-        "header": [],
         "body": {
           "mode": "raw",
           "raw": "{\r\n    \"username\": \"Leandro\",\r\n    \"password\": \"abd123\"\r\n}",
@@ -153,44 +145,17 @@
             }
           ]
         }
-      },
-      "response": []
-    }
-  ],
-  "event": [
-    {
-      "listen": "prerequest",
-      "script": {
-        "id": "8a297ed6-9598-4e19-b574-1b019a9062bb",
-        "type": "text/javascript",
-        "packages": {},
-        "requests": {},
-        "exec": [
-          ""
-        ]
-      }
-    },
-    {
-      "listen": "test",
-      "script": {
-        "id": "63fe1841-69d9-4880-904c-a23182169b16",
-        "type": "text/javascript",
-        "packages": {},
-        "requests": {},
-        "exec": [
-          ""
-        ]
       }
     }
   ],
   "variable": [
     {
-      "id": "f07f627f-7d09-4b80-8c1f-566c758e828b",
+      "id": "ec5c7de6-5f69-4303-98d6-1cae0be9a3c7",
       "key": "baseURL",
       "value": ""
     },
     {
-      "id": "18660869-acfb-49ee-8ee2-27b2b0ae116f",
+      "id": "cbed4354-a42d-4fb0-92c2-d50fb7f0c884",
       "key": "bearer_token",
       "value": ""
     }
