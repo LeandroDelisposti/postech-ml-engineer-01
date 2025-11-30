@@ -15,6 +15,25 @@ This project is structured as a microservices application, with each service run
 
 See `docs/architecture.md` for the full architectural plan.
 
+## Backlog
+
+### Core Service
+- Isolate core/scraper.py from core/__main__.py to have it's own pipeline
+- Protect scraper.py with authentication (user: user, password: password)
+- Implement JWT authentication
+
+### Insights Service
+- Implement a dashboard to show book data statistics
+- Implement a dashboard to show book data visualizations
+- Implement JWT authentication
+
+### Auth Service
+- Implement JWT authentication
+
+### ML Service
+- Implement a book recommendation system
+- Implement JWT authentication
+
 ## Installation and Setup
 
 1. **Clone the repository:** 
