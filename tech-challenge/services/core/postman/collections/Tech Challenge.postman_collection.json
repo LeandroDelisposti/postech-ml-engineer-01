@@ -1,0 +1,198 @@
+{
+  "info": {
+    "_postman_id": "76e8e822-31a0-4374-818f-236a71fbdc33",
+    "name": "Tech Challenge",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "290184"
+  },
+  "item": [
+    {
+      "name": "scrape",
+      "id": "314af399-f7da-485e-8ecd-2d1531e18c4b",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"Leandro\",\r\n    \"password\": \"abd123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/api/v1/scrape",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "scrape"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "books",
+      "id": "ee13ffd1-5ffc-4069-94ad-2ffc085898a4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"Leandro\",\r\n    \"password\": \"abd123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/api/v1/books",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "books\\{id}",
+      "id": "8107a48a-80a9-4e5e-b9c8-7b9f97eefdd4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"Leandro\",\r\n    \"password\": \"abd123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/api/v1/books/1",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "books",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "books\\search",
+      "id": "bc338068-282a-43c3-8813-58fd401692c4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"Leandro\",\r\n    \"password\": \"abd123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/api/v1/books/search?category=Fantasy",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "books",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "title",
+              "value": "Requiem",
+              "disabled": true
+            },
+            {
+              "key": "category",
+              "value": "Fantasy"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "8a297ed6-9598-4e19-b574-1b019a9062bb",
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "63fe1841-69d9-4880-904c-a23182169b16",
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "f07f627f-7d09-4b80-8c1f-566c758e828b",
+      "key": "baseURL",
+      "value": ""
+    },
+    {
+      "id": "18660869-acfb-49ee-8ee2-27b2b0ae116f",
+      "key": "bearer_token",
+      "value": ""
+    }
+  ]
+}
